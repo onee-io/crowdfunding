@@ -2,6 +2,7 @@
 
 教程链接：[https://learnblockchain.cn/2019/12/20/vue-dapp](https://learnblockchain.cn/2019/12/20/vue-dapp)
 
+合约已部署至 Heco 测试网：[0x75E6d93B2aBB21CF5ad499F0138BE1D605b44643](https://testnet.hecoinfo.com/address/0x75E6d93B2aBB21CF5ad499F0138BE1D605b44643)
 ## 需求分析
 
 假设我准备出版一本区块练技术书籍，但是不确定有多少人愿意购买这本书，于是我发起了一个众筹， 如果在一个月内，能筹集到10个ETH，我就进行写作，并给参与的读者每人赠送一本书，如果未能筹到足够的资金，参与的读者赎回之前投入的资金。

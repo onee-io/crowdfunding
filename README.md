@@ -1,8 +1,8 @@
 # 众筹Dapp项目
 
-教程链接：![https://learnblockchain.cn/2019/12/20/vue-dapp](https://learnblockchain.cn/2019/12/20/vue-dapp)
+教程链接：[https://learnblockchain.cn/2019/12/20/vue-dapp](https://learnblockchain.cn/2019/12/20/vue-dapp)
 
-## 需求
+## 需求分析
 
 假设我准备出版一本区块练技术书籍，但是不确定有多少人愿意购买这本书，于是我发起了一个众筹， 如果在一个月内，能筹集到10个ETH，我就进行写作，并给参与的读者每人赠送一本书，如果未能筹到足够的资金，参与的读者赎回之前投入的资金。
 

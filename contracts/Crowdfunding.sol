@@ -9,13 +9,13 @@ contract Crowdfunding {
     mapping(address => uint) public joined;
 
     // 众筹目标
-    uint constant Target = 10 ether;
+    uint constant Target = 0.1 ether;
 
     // 众筹截止时间
     uint public endTime;
 
     // 记录当前众筹价格
-    uint public price  = 0.02 ether ;
+    uint public price  = 0.0002 ether;
 
     // 作者提取资金之后，关闭众筹
     bool public closed = false;
@@ -29,17 +29,15 @@ contract Crowdfunding {
     // 更新价格，这是一个内部函数
     function updatePrice() internal {
         uint rise = address(this).balance / 1 ether * 0.002 ether;
-        price = 0.02 ether + rise;
+        price = 0.0002 ether + rise;
     }
 
     // 用户向合约转账时 触发的回调函数
     function () external payable {
         require(now < endTime && !closed  , "众筹已结束");
         require(joined[msg.sender] == 0 , "你已经参与过众筹");
-
         require (msg.value >= price, "出价太低了");
         joined[msg.sender] = msg.value;
-
         updatePrice();
     } 
 

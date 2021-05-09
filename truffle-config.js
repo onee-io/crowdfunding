@@ -47,6 +47,19 @@ module.exports = {
       port: 7545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
+    ropsten: {
+      provider: () =>
+        new HDWalletProvider({
+          mnemonic,
+          providerOrUrl: 'https://ropsten.infura.io/v3/3e7ae462fdb4453083b90f63ba7fcf9a',
+          chainId: 3,
+        }),
+      network_id: 3, // Ropsten's id
+      gas: 5500000, // Ropsten has a lower block limit than mainnet
+      confirmations: 0, // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+      skipDryRun: true
+    },
     testnet: {
       provider: () => new HDWalletProvider(mnemonic, 'https://http-testnet.hecochain.com'),
       network_id: 256,
